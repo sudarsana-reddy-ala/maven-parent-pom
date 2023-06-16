@@ -20,10 +20,9 @@ jobs:
 
    
       - name: Publish to GitHub Packages Apache Maven
-        run: |
-         Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+        run: |         
          mvn -DuseGitHubPackages=true -DcreateChecksum=true deploy -s ci_settings.xml
+        shell: cmd
         env:
-          PACKAGE_TOKEN:  ${{ secrets.PACKAGE_PAT }}
-        shell: pwsh
+          PACKAGE_TOKEN:  ${{ secrets.PACKAGE_PAT }}       
         
