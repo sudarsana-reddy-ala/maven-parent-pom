@@ -25,4 +25,5 @@ jobs:
          mvn -DuseGitHubPackages=true -DcreateChecksum=true deploy -s ci_settings.xml
         env:
           PACKAGE_TOKEN:  ${{ secrets.PACKAGE_PAT }}
+        shell: pwsh
         
