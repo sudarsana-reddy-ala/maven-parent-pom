@@ -1,7 +1,11 @@
 name: Maven POM Package
 
 on:
- push
+ workflow_dispatch:
+ push:
+ 
+    
+ 
  
 
 jobs:
