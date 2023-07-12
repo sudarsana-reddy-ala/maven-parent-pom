@@ -3,10 +3,6 @@ name: Maven POM Package
 on:
  workflow_dispatch:
  push:
- 
-    
- 
- 
 
 jobs:
   build:
